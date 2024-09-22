@@ -1,0 +1,102 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color:#BEE5BF;
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.profile {
+    color: #000; /* Adjusted text color for contrast */
+    margin-bottom: 20px;
+}
+
+.photo {
+    margin: 0 auto;
+    border: 4px solid #03bef2;
+    padding: 4px;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: url("https://imgs.search.brave.com/9BVy-p4NCb7OfPBfcK5G8t_JhRxATK1YEOT7oxpDC94/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMi53/cC5jb20vNjQubWVk/aWEudHVtYmxyLmNv/bS8zYTlkNWQzNmI4/NzAxZjBlM2VmMTQw/NWUyZjc4NDk2YS9l/YTllYjlkODZmOGVh/NTczLTlhL3M2NDB4/OTYwLzQxZjFiMWQ2/MjY2MDY0MWUzM2Ix/NGMyZjQ5ODE0OTBk/NTlhOGQ3NDIuanBn") center/cover no-repeat;
+    background-color: #e0e0e0; /* Fallback color */
+}
+
+.profile_name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+/* Button Styles */
+.custom-btn {
+    width: 200%;
+    height: 45px;
+    margin: 12px 0;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #fff; /* Changed for better contrast */
+    background: linear-gradient(135deg, #26d0ee, #03bef2);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.custom-btn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.custom-btn i {
+    margin-right: 8px;
+}
+
+.custom-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #004266, #0364c5);
+}
+
+.custom-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .profile_name {
+        font-size: 20px; /* Adjust font size for mobile */
+    }
+
+    .custom-btn {
+        height: 40px; /* Adjust button height for mobile */
+    }
+}
